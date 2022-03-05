@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <div class="box" id="heading">
+      <h1><%=listTitle%></h1>
+    </div>
+    <div class="box">
+      <% for (item of newItem) {%>
+      <div class="item">
+        <input type="checkbox" />
+        <p><%=item%></p>
+      </div>
+      <% } %>
+      <form class="item" action="/" method="post">
+        <input placeholder="New Item" type="text" autocomplete="off" name="newItem" />
+        <button type="submit" class="btn-circle" name="list" value=<%=listTitle %> >+</button>
+      </form>
+      <form action="/" method="post">
+        <div class="flex">
+          <button id="listChange" name="listChange" class="btn" type="submit" value=<%=listTitle %> >Check Another List</button>
+        </div>
+      </form>
+    </div>
+    <footer>Copyrite 2022</footer>
+  </body>
+</html>
