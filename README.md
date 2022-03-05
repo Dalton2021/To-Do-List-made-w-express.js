@@ -5,4 +5,4 @@ This was created with guidance from Angela Yu's Udemy course The Complete 2022 W
 
 
 # To Start Project
-run command npm start
+run command _**npm start**_
