@@ -4,5 +4,5 @@ This is a simple to do list which will switch between two lists/servers each ran
 This was created with guidance from Angela Yu's Udemy course The Complete 2022 Web Development Bootcamp
 
 
-#To Start Project
+# To Start Project
 run command npm start
